@@ -1,0 +1,21 @@
+{
+    "name": "panwenbin/yii2-cors-options-filter",
+    "description": "Yii2 Filter for cors options requests",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Pan Wenbin",
+            "email": "panwenbin@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=5.4.0",
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "panwenbin\\yii2\\filters\\": "src/"
+        }
+    }
+}
