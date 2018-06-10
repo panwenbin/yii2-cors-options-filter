@@ -14,7 +14,7 @@ class CorsOptionsFilter extends ActionFilter
     {
         $request = Yii::$app->getRequest();
         $response = Yii::$app->getResponse();
-        if ($request->isOptions && $response->headers->has('Access-Control-Allow-Methods')) {
+        if ($request->isOptions && $request->headers->has('Access-Control-Request-Method')) {
             // it is CORS preflight request, respond with 200 OK without further processing
             $response->setStatusCode(200);
             return false;
